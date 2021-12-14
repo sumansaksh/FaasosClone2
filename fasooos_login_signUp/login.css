@@ -1,0 +1,136 @@
+*{
+  font-family: sans-serif;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 4% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 35%;
+    height: 87%; /* Could be more or less, depending on screen size */
+    padding: 8px;
+    border-radius: 5px;
+     
+  }
+  
+  /* The Close Button */
+  .close {
+    font-size: 28px;
+    margin-top: 5px;
+    font-weight: 700;
+  }
+  .color-l{
+      color:#888;
+      margin-left: 9px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ #name,#email{
+    margin-top:5px;
+    padding: 10px;
+    width: 60%;
+    border: 1px solid lightgray;
+    border-radius:3px;
+    height: 40px;
+    margin-bottom:20px ;
+  }
+  #name,#email{
+    margin: auto 10px;
+    width: 91%;
+    margin-bottom:20px ;
+
+  }
+  #name{
+    margin-top: 10px;
+  }
+  #span-F{
+      display: flex;
+  }
+  #code{
+   
+    height: 30px;
+    border-radius:5px;
+    
+  }
+  #lin,#tc{
+      text-align: center;
+  }
+  #lin1{
+    margin-top: 40%;
+   text-align: center;
+  }
+#btn{
+    margin-top: 20px;
+   width:96%;
+   color: white;
+   font-size: 26px;
+   margin: 10px;
+   height: 50px;
+   border:none;
+   border-radius: 3px;
+}
+#top{
+    display: flex;
+    
+}
+#img{
+    margin-left: auto;
+    margin-right: 13px;
+}
+#cl{
+    height:20px;
+    transform: rotate(180deg);
+}
+.countrys{
+  font-weight: 700;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  width: 11%;
+}
+ .phone-container{
+   width: 98%;
+   height: 66px;
+   display: flex;
+   margin: auto;
+ } 
+ .phone-container >div{
+   margin: 4px;
+ }
+ #number{
+   padding: 5px;
+   border-radius: 3px;
+   width: 25rem;
+   display: inline;
+   outline: none;
+   border: 1px solid lightgray;
+
+
+ }
+ #country-code{
+  padding: 2px;
+margin-bottom: 9px;
+   width: 24px;
+   border: none;
+ }
+ 

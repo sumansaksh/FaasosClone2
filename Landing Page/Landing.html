@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faasos</title>
+    <link rel="icon" href="https://c2.iwebchk.com/icon/view/order.faasos.io">
+    <link rel="stylesheet" href="Landing.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <script src="https://kit.fontawesome.com/50a2aaf789.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="loading"></div>
+    <div id="myModal" class="modal">
+
+                 <!-- Modal content -->
+  <div class="modal-content">
+    <div id="top">
+  <div class="close"> <img id="cl"src="https://cdn1.iconfinder.com/data/icons/ui-ux-essential-1/16/chevron-right-512.png"/> Login</div>
+  <img id="img"src="image/logo.png"> 
+  </div>
+  <span class="color-l"><strong>Enter Your Mobile Number</strong></span><br><br><br>
+  <form class="forms" onsubmit="getdata(event)">
+      <div class="phone-container">
+      <div class="countrys">
+      <div id="code">+91</div>
+
+      <select id="country-code" onchange="get()" class="arrenge">
+          <option value="+91">India</option>
+          <option value="+93"> Afganishtan</option>
+          <option value="+61">Australiya</option>
+          <option value="+880">Bangladesh</option>
+          <option value="+32">Barbados</option>
+          <option value="+32">Belgium</option>
+          <option value="+1">Canada</option>
+          <option value="+86">China</option>
+          <option value="+81">Japan</option>
+          <option value="+52">Maxico</option>
+          <option value="+64">New Zeland</option>
+          <option value="+82">Sout Korea</option>
+          <option value="+1">US</option>
+          <option value="+967">Yemen</option>
+          <option value="+260">Zambia</option>
+      </select>
+      </div>
+
+      <div id="span-F">
+      <input id="number" type="text"placeholder="phone Number"pattern="[1-9]{1}[0-9]{9}"  required ></input>
+  </div>
+</div>
+<div id = "check"></div>
+
+      <button id="btn"  type="submit">Continue</button></br></br></br></br></br></br>
+      <p id="lin1">Don’t have an account? <a id="Sink"clss="sublink">Sign up</a></p>
+
+  </form>
+
+</div>
+
+</div> 
+
+                   <!-- The Modal for sign Up-->
+<div id="myModal2" class="modal">
+    <!-- Modal content -->
+<!-- Modal content -->
+<div class="modal-content">
+    <div id="top2">
+  <div class="close2"> <img id="cl2"src="https://cdn1.iconfinder.com/data/icons/ui-ux-essential-1/16/chevron-right-512.png"/> Sign Up</div>
+  <img id="img2"src="image/logo.png"/>
+</div>
+  <span class="color-l"><strong>Enter Your Mobile Number</strong></span><br><br><br>
+  <form onsubmit="signup(event)" id="form2">
+      <div class="phone-container2">
+          <div class="countrys2">
+          <div id="code2">+91</div>
+  
+          <select id="country-code2" onchange="get2()" class="arrenge">
+              <option value="+91">India</option>
+              <option value="+93"> Afganishtan</option>
+              <option value="+61">Australiya</option>
+              <option value="+880">Bangladesh</option>
+              <option value="+32">Barbados</option>
+              <option value="+32">Belgium</option>
+              <option value="+1">Canada</option>
+              <option value="+86">China</option>
+              <option value="+81">Japan</option>
+              <option value="+52">Maxico</option>
+              <option value="+64">New Zeland</option>
+              <option value="+82">Sout Korea</option>
+              <option value="+1">US</option>
+              <option value="+967">Yemen</option>
+              <option value="+260">Zambia</option>
+          </select>
+          </div>
+  
+          <div id="span-F2">
+          <input id="number2" type="text"placeholder="phone Number"pattern="[1-9]{1}[0-9]{9}"  required ></input>
+      </div>
+
+   </div>
+   <div id = "check2"></div>
+
+  <input id="name2" type="text"placeholder="Name"required ></input>
+  <input id="email2" type="text"placeholder="Email Adress"required ></input>
+      <button id="btn2" type="submit">Continue</button>
+      <p class="color-l"id="tc">By creating an account, I accept the <a href="#">Terms & Conditions</a></p></br></br></br></br></br></br>
+      <p id="lin2">Already have an account? <a  id="Link" clss="sublink">Log in</a></p>
+  </form>
+</div>
+</div>
+
+
+
+<!--Page Content-->
+    <div id="topBox">
+        <div id="leftBox">
+            <div id="logoLine">
+                <img src="https://assets.faasos.io/faasos_v2/faasosLogoBrand.svg" alt="Logo Image" />
+                <div>       
+                    <div id="myBtn">Login</div>
+                    <div id="myBtn2">Sign Up</div>
+                </div>
+            </div>
+            <h1>Surprises under wraps</h1>
+        </div>
+        <div id="rightBox">
+            <img src="https://assets.faasos.io/faasos_v2/hero-banner.jpg" alt="Food Image" />
+        </div>
+    </div>
+    <h1 id="head">Eat Good, Eat Safe. Always! Now with the EatSure promise.</h1>
+    <div id="head2">To keep your food safe and hygienic, here are some proactive steps that we have been taking.</div>
+    <div id="middle">
+        <div id="middleLeft">
+            <div>
+                <div><img src="https://assets.faasos.io/faasos_v2/kitchenSurface4.svg" alt="image"/></div>
+                <div><b>Real-time Temperature</b> Tracking of the kitchen and delivery staff</div>
+            </div>
+            <div>
+                <div><img src="https://assets.faasos.io/faasos_v2/mask1.svg" alt="image"/></div>
+                <div><b>Contactless Delivery</b></div>
+            </div>
+            <div>
+                <div><img src="https://assets.faasos.io/faasos_v2/staff2.svg" alt="image"/></div>
+                <div><b>Regular health</b> check-ups for all the staff members</div>
+            </div>
+        </div>
+        <div id="middleRight">
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/SBGKA87fmCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="lower-box">
+        <div>
+            <img src="https://assets.faasos.io/faasos_v2/esSafetyLogo.svg" alt="Eat Sure">
+        </div>
+        <div>
+            <input type="checkbox" checked="checked">
+            <p>Medically Certified Staff</p>
+        </div>
+        <div>
+            <input type="checkbox" checked="checked">
+            <p>200+ Stringent Quality Checks</p>
+        </div>
+        <div>
+            <input type="checkbox" checked="checked">
+            <p>No Artificial Colours or Flavours</p>
+        </div>
+        <div>
+            <input type="checkbox" checked="checked">
+            <p>Double Sealed Packaging</p>
+        </div>
+        <div>
+            KNOW MORE
+        </div>
+    </div>
+    <div id="lower">
+        <p>Here are some additional measures which our kitchen teams are rigorously following!</p>
+        <div id="lowerPortion">
+            <div>
+                <img src="https://assets.faasos.io/faasos_v2/mask1.svg"/>
+                <div class="pad">Using masks all the time.</div>
+            </div>
+            <div>
+                <img src="https://assets.faasos.io/faasos_v2/staff2.svg"/>
+                <div class="pad">Maintaining a log of kitchen staff’s body temperature.</div>
+            </div>
+            <div>
+                <img src="https://assets.faasos.io/faasos_v2/safety3.svg"/>
+                <div class="pad1">Using handwash frequently to clean hands.</div>
+            </div>
+            <div>
+                <img src="https://assets.faasos.io/faasos_v2/kitchenSurface4.svg"/>
+                <div class="pad">Sanitising all the kitchen surfaces, every 4 hours.</div>
+            </div>
+            <div>
+                <img width="70" height="45" src="https://assets.faasos.io/faasos_v2/delivery_5.png"/>
+                <div class="pad1">Delivering food in an enclosed sealed package to avoid contamination.</div>
+            </div>
+        </div>
+    </div>
+    <div id="big"></div>
+</body>
+</html>
+<script src="Landing.js"></script>     
+<script type="module">
+    import foot from "../footer/footer.js";
+    document.getElementById("big").innerHTML = foot;
+</script>
+

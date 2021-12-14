@@ -1,0 +1,67 @@
+ /*Navbar*/
+ #navbar{
+    width:101%;
+    display: grid;
+    margin-top: -1%;
+    margin-left: -0.9%;
+    grid-template-columns: 20% 20%;
+    grid-gap: 58%;
+    margin-bottom: 1%;
+    background-color: white;
+    box-shadow: 0px  0px 5px lightgray;
+}
+#navLeft{
+    text-align: center;
+    padding:5%;
+}
+#navRight{
+    display: grid;
+    grid-template-columns: 33% 20%;
+    grid-gap: 10%;
+    color:darkblue;
+}
+#navRight > div:nth-child(1){
+    display: grid;
+    grid-template-columns: 40% 40%;    
+    padding-top: 30%;       
+}
+#navRight > span:nth-child(2){
+    text-align: center;
+    padding-top: 45%; 
+    cursor: pointer;
+}
+
+/*Sidebar*/
+
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+    #closeBtn{
+        margin-left: 80%;
+        cursor: pointer;
+        margin-top: -1%;
+    }
+    .prof{
+        margin: 10% 0% 1% 10%;
+        display: grid;
+        grid-template-columns: 12% 60%;
+        font-size: 22px;
+    }
+    .prof > span:nth-child(1){
+        padding-top: 9%;
+        color: yellowgreen;
+    }
+    .prof > div:nth-child(2){
+        color: rgb(126, 126, 126);
+        cursor: pointer;
+    }
+

@@ -1,0 +1,115 @@
+body{
+    background-color:#f5f5f6;
+    margin:0;
+    font-family: "Roboto",sans-serif;
+}
+#data{
+        margin: auto;
+        /* border: 3px solid green; */
+        /* padding: 10px; */
+        display: flex;
+        justify-content: center;
+        background-color:#f9cb35;
+        padding:5vh;
+}
+/* #data>div{
+     text-align: center;
+} */
+img{
+   width:10vh;
+   /* padding: 1vh; */
+   padding-right: 1.4vh;
+}
+#name{
+    font-size: 3.5vh;
+}
+#number,#email,#name{
+    text-align:left;
+    color: rgb(20, 20, 20);
+}
+#email,#number{
+    color: #888;
+}
+#downbar{
+    display: grid;
+grid-template-columns: repeat(4,25%);
+text-align: center;
+font-size: 3vh;
+margin: 2vh;
+}
+
+#profileGrid{
+    display: grid;
+    grid-template-columns: repeat(3,10%);
+    background-color: burlywood;
+}
+
+#check>img{
+    width: 20vh;
+}
+#a{
+   
+  display: flex;
+  justify-content:center;
+}
+#b{
+    display: grid;
+    grid-template-columns:repeat(2,50%);
+    gap:10vh;
+    /* background-color: coral; */
+    width: 70%;
+    padding:10vh;
+}
+.bold{
+    font-weight:bold;
+    font-size: 2.7vh;
+}
+.dim{
+    color:#999fac;
+
+}
+#downbar>div{
+cursor:pointer;
+
+}
+#hr1,#hr2,#hr3,#hr4{
+    height:1px;
+    background-color: #7f878e;
+}
+#check{
+
+    margin-top: 15vh;
+}
+#mid{
+
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+#flexi{
+   padding-left:4vh;
+}
+a{
+    color: darkgray;
+    text-decoration:none;
+}
+.temp{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+#Paymentimg img{
+
+    width:100%;
+    
+}
+#innerbtn{
+    background-color:#f9ca35;
+    color: #3d4035;
+    padding: 20px;
+    border-radius:10px;
+    border:1px solid #f9ca35;
+}
+
+
