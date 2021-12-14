@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food Online from Faasos</title>
+    
+    <link href="/css/product_page.css" rel="stylesheet" type="text/css">
+
+
+   
+    <link rel="icon" href="https://c2.iwebchk.com/icon/view/order.faasos.io"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./product_page.css">
+    <link rel="stylesheet" href="../Nav_bar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+</head>
+<body onload="showData('<%= JSON.stringify(products) %>')">
+
+  
+  <div><%products.forEach(product=>{ %>
+    <p onclick="showproducts('<%= JSON.stringify(product) %>')"><%=product.category%> </p>
+  <% }) %> 
+  </div>
+
+ 
+  <div id="loading"></div>
+  <!--Navbar-->
+
+  <div id="navbar"></div>
+
+  <!--sidebar(code) open on click on ham-->
+  <div id="mySidebar" class="sidebar">
+    
+  </div>
+
+  <!--Navbar End-->
+<!-- Image Carousel Start-->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img
+          src="https://product-assets.faasos.io/production/product/image_1635487458837_Faasos-SS-%20Web%20banner-%2029th%20oct%20to%202nd%20nov.jpg"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://product-assets.faasos.io/production/product/image_1629953295371_Munch-%20Creative-approved..jpg"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://product-assets.faasos.io/production/product/image_1635487458837_Faasos-SS-%20Web%20banner-%2029th%20oct%20to%202nd%20nov.jpg"
+        />
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-btn"></div>
+    <div class="swiper-button-prev swiper-btn"></div>
+  </div>
+<!-- Image Carousel End-->
+
+<!--search Bar-->
+  <!--Modal content-->
+  <div id="searchModalContainer">
+    <div id="searchModal">
+      <div id="modal-container" >
+      <div id="modalContent">
+          <button id="close">￩</button>
+          <input type="text" placeholder="Search for Dishes" id="searchData-appear"/>
+        <!-- <i class="fa fa-search"></i>-->
+          <img id="search-logo" src="https://github.com/pankaj5417/koovs.com/blob/main/icons/search-icon%20(3).png?raw=true" alt="">
+      </div>
+      <div id="searchContent"></div>
+    </div>
+    </div>
+  </div>
+
+<!--Serarch bar and filters for Veg and Non-veg-->
+<div id="search-container">
+  <div  id="searchhead">
+      <div>
+          Order Food Online
+      </div>
+      <div>
+          <div id="search">
+              <i class="fa fa-search"></i>
+              <div>Search for wraps</div>
+          </div>
+          <div>
+              <input id="nonveg" type="checkbox"/>
+              <div>Non-Veg Only</div>
+          </div>
+          <div>
+              <input id="veg" type="checkbox"/>
+              <div>Veg Only</div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--search bar End-->
+
+
+
+  <div class="container "> 
+      <div class="row container-box">
+          <div class="col-left"> 
+       <p class="p-text-color" id="p1" >Fab Wraps starting at 99 each</p>
+       <p class="p-text-color" id="p2" >Daily Value Wrap Combos (Save Upto 40% Extra)</p>
+       <p class="p-text-color" id="p3">Combos for 1 (Upto 15% Savings)</p>
+       <p class="p-text-color" id="p4">New Launches</p>
+       <p class="p-text-color" id="p5">Combos for 4 (Upto 25% Savings)</p>
+       <p class="p-text-color" id="p6">Signature Wraps</p>
+       <p class="p-text-color" id="p7">Classic Wraps</p>
+       <p class="p-text-color" id="p8">Sides And Beverages</p>
+       <p class="p-text-color" id="p9"> Combos for 2 (Save upto 25% Extra)</p>
+       <p class="p-text-color" id="p10">Desserts-</p>
+
+          </div>
+
+          <div class="col-mid box p-text-color " id="mid-container"> 
+            <div>
+            <h3 >  Fab Wraps starting at 99 each </h3>
+             <div id="mid-container1"></div>
+            </div>
+         <hr>
+         <div>
+         <h3 >Daily Value Wrap Combos (Save Upto 40% Extra)</h3>
+             <div id="mid-container2"></div>
+            </div> 
+             
+             <hr>
+         <div>
+           <h3>Combos for 1 (Upto 15% Savings)</h3>
+           <div id="mid-container3"></div>
+          </div>
+         
+       <hr>
+        
+         <h3>New Launches</h3>
+         <div id="mid-container4"></div>
+         <hr>
+        
+     
+        <div>
+           <h3>Combos for 4 (Upto 25% Savings)</h3>
+           <div id="mid-container5"></div>
+           <hr>
+        </div>
+   
+       <div>
+         <h3>Signature Wraps</h3>
+          <div id="mid-container6"></div>
+          <hr>
+      </div>
+      <div>
+       <h3>Classic Wraps</h3>
+        <div id="mid-container7"></div>
+        <hr>
+     </div>
+     <div>
+
+      <h3>Sides And Beverages</h3>
+       <div id="mid-container8"></div>
+       <hr>
+     </div>
+
+     <div>
+      <h3>Combos for 2 (Save upto 25% Extra)</h3>
+       <div id="mid-container9"></div>
+       <hr>
+    </div>
+      
+     <div>
+       <h3>Desserts</h3>
+        <div id="mid-container10"></div>
+        <hr>
+     </div>
+   </div>  
+        
+            
+         
+          <div class="col-right "> 
+          <div class="row center cart-top ">
+           
+              <h2 class="margin " id="cart-head">Cart</h2>
+              <p id="qty">Q.</p>
+              <p id="cart-head-2">Item</p>
+          </div>  
+          <div id="empty-cart"> 
+            <img src="./emptycart.png" alt=" empty cart">
+          </div>
+          <div class=" center" id = cart-center>
+              <div class="cart-left p-text-color" id="cart-item">
+              
+
+              </div>
+            
+
+          <div class="row cart-bottom " id="cart-bottom">
+              <div class="cart-bottom-left">
+                <h2 class="line-height">SubTotal</h2>
+                  <p class="p-text-color" >Extra charges may apply</p>
+              </div>
+              <div class="row cart-bottom-right">
+                 <p id="total"></p>
+             </div>
+          </div>  
+          <button onclick="gotoCart()"  class="checkout-btn" id="checkout">CHECKOUT</button>  
+
+          </div>
+
+      </div>
+  </div>
+  <div id="big5"></div>
+
+</html>
+</body>
+</html>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script type="module" src="carousel.js"></script>
+<script type="module"  src="search.js"></script>
+
+<script  src="/js/product.js" type="text/javascript"></script> 
+
+<script src="/js/show.js">
+
+</script>
